@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">');
+
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+/*nav*/
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #2B2D42;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-logo a img{
+    border-radius: 2px;
+}
+
+.nav-logo a img:hover{
+    transform: scale(1.1);
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: gainsboro;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #CD3637;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: gainsboro;
+    background-color: #CD3637;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: gainsboro;
+    color: #CD3637;
+}
+
+/*header*/
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 75px #CD3637;
+    z-index: -200;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .container h4{
+    margin-bottom: 1rem;
+    color: gainsboro;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .container ,.conteudo h4{
+    color: gainsboro;
+}
+
+header .conteudo h1{
+    color: #CD3637;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .conteudo h1 span{
+    color: gainsboro;
+}
+
+header .conteudo p{
+    margin-bottom: 2rem;
+    color: gainsboro;
+}
+
+header .conteudo .sociais a{
+    color: gainsboro;
+    border: 1px solid #CD3637;
+    padding: 5px 10px;
+    font-size: 1.75rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+header .conteudo .sociais a:hover{
+    color: #CD3637;
+    background-color: gainsboro;
+}
+
+header .imagem{
+    position: relative;
+}
+
+header .imagem::before{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: gainsboro;
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .imagem img{
+    max-width: 600px;
+    margin: auto;
+}
+
+/*certif*/
+section .header{
+    margin-bottom: 1rem;
+    color: gainsboro;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.certif{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.certif .card{
+    text-align: center;
+    background-color: #2B2D42;
+    padding: 1rem;
+    border: 2px solid #CD3637;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.certif .card:hover{
+    background-color: gainsboro;
+    border-color: #CD3637;
+}
+
+.certif .card span{
+    display: inline-block;
+    background-color: #2B2D42;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: gainsboro;
+    border-radius: 5px;
+}
+
+.certif .card h4{
+    margin-bottom: 0.5rem;
+    color: #CD3637;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.certif .card p{
+    color: #CD3637;
+    margin-bottom: 1rem;
+}
+
+/*conhecimentos*/
+
+.conhec .fotos {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.conhec {
+    padding: 5rem 2rem;
+}
+
+.fotos{
+    border-radius: 50%;
+    width: 100px;
+    padding: 10px;
+}
+
+.fotos:hover{
+    border-radius: 20%;
+    transition: border-radius 1s;
+}
+
+/*Pricing*/
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: gainsboro;
+}
+
+.pricing{
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card{
+    padding: 3rem 2rem;
+    background-color: #2B2D42;
+    border: 2px solid #CD3637;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card .conteudo{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: gainsboro;
+    border-color: 2px solid #CD3637;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.pricing .card h3{
+    text-align: center;
+    color: #CD3637;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.pricing .card p{
+    color: #CD3637;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i{
+    color: gainsboro;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card a{
+    text-align: center;
+    color: gainsboro;
+    font-size: 1rem;
+    font-weight: 650;
+}
+
+.pricing .card a:hover{
+    color: #CD3637;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+}
+
+footer h2{
+    text-align: center;
+    color: gainsboro;
+    font-size: 2rem;
+    font-weight: 650;
+    padding: 2%;
+}
+
+footer .sociais a{
+    color: gainsboro;
+    border: 1px solid #CD3637;
+    padding: 5px 10px;
+    font-size: 2rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+    margin: 1rem;
+}
+
+footer .sociais a:hover{
+    color: #CD3637;
+    background-color: gainsboro;
+}
+
+/*copyright*/
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: gainsboro;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/*responsividade*/
+@media(width < 900px){
+    .nav-links{
+        display: none;
+    }
+    .header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header .imagem{
+        grid-area: 1/1/2/2;
+    }
+    .certif{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    header .imagem::before{
+        display: none;
+    }
+    .certif{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .pricing{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+}
